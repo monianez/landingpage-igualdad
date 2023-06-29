@@ -1,0 +1,495 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    box-sizing: border-box;
+}
+
+li{ list-style: none; }
+
+h1 , h2 , h3 , h4 , h5 , h6 , strong{
+    font-size: inherit;
+    font-weight: inherit;
+}
+a{
+    display: block;    
+    color:inherit;
+    text-decoration: none;
+}
+p a{
+    display: inline;
+}
+img{
+    display: block;
+    max-width: 100%;
+    width:100%;
+}
+form, input , select , option, textarea , button, fieldset {
+    display: block;
+    font-family: inherit;
+    color:inherit;
+    background-color: transparent;
+}
+svg{
+    display: block;
+    fill: currentColor;
+}
+:root{
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* Tipografías */
+    --font-main : 'Arial', sans-serif;
+    
+    /* Colores */
+    --color-bluelighter: #BCD5F6;
+    --color-bluelight: #649FEA;
+    --color-bluemedium: #1D4D90;     
+    --color-bluedark: #29337F;
+    --color-black : black;
+    --color-white : white;
+    --color-grey : #ECEEEF;
+
+    /* Border y befores */
+    --border-height : 2px;
+    --border-main   : var(--border-height) solid var(--color-black); 
+}
+
+/* Text */
+h1 {
+    font-size: 1.875rem;
+}
+
+.h1-white {
+    font-size: 1.875rem;
+    color: white;
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 1.875rem;
+}
+
+.h2-white {
+    font-size: 2rem;
+    color: white;
+    line-height: 2.125rem;
+}
+
+.h2-blue {
+    font-size: 2rem;
+    color: var(--color-bluedark);
+    line-height: 2.125rem;
+}
+
+h3 {
+    font-size: 1.375rem;
+}
+
+h3 {
+    font-size: 1.375rem;
+    color: var(--color-white);
+    line-height: 2.125rem;
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.h4-white {
+    font-size: 1rem;
+    font-weight: normal;
+    color: var(--color-white);
+    line-height: 1.3rem;
+}
+
+.h4-blue {
+    font-size: 1rem;
+    font-weight: normal;
+    color: var(--color-bluedark);
+    line-height: 1.3rem;
+}
+
+h5 {
+    font-size: .625rem;
+    font-weight: normal;
+}
+
+.h5-black {
+    font-size: .625rem;
+    font-weight: normal;
+    color: var(--color-black);
+}
+
+
+/* Styles */
+
+
+/*--------------------- Header ---------------------*/
+
+.Header {
+    width: 100%;
+    background-color: #1D4D90;
+    padding: 1.25rem;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: .625rem;
+}
+
+.Header-logo {
+
+}
+
+.Header-img {
+    width: 100%;
+}
+
+.Header-h2 {
+
+}
+
+
+/*--------------------- Main ---------------------*/
+
+.Main {
+    width: 100%;
+}
+
+.Section {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat( 4 , 1fr );
+
+}
+
+
+@media (max-width:1000px) {
+    .Section {
+        grid-template-columns: repeat( 2 , 1fr );
+    }
+}
+
+@media (max-width:600px) {
+    .Section {
+        grid-template-columns: initial;
+    }
+
+    .Teayudamos, .Form, .Modelos, {
+        grid-column: initial;
+        grid-row: initial;
+    }
+
+    .Verificacion, .Imagen {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+}
+
+
+/*--------------------- Te ayudamos ---------------------*/
+
+.Teayudamos {
+    width: 100%;
+    background-color: #649FEA;
+    background-image: url(https://assets-eur.mkt.dynamics.com/0f2f56be-2a4b-4daf-b4d5-51079ee05c0d/digitalassets/images/eeb3557a-0a06-ee11-8f6e-000d3a2e4429?ts=638218320584909699);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+
+    grid-column: span 2;
+    grid-row: span 1;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.Teayudamos-text {
+    width: 70%;
+    padding: 0 2rem 0 0;
+}
+
+.Teayudamos-h2 {
+    padding-bottom: 1rem;
+}
+
+.Teayudamos-h4 {}
+
+
+/*--------------------- Formulario ---------------------*/
+
+.Form {
+    grid-column: span 2;
+    grid-row: span 3;
+}
+
+.Form-iframe {
+    width: 100%;
+    height: 150vh;
+    margin: auto;
+}
+
+
+/*--------------------- Verificacion ---------------------*/
+
+.Verificacion {
+    background-color: var(--color-grey);
+
+    grid-column: span 1;
+    grid-row: span 1;
+
+    padding: 0 2rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.Verificacion-text {}
+
+.Verificacion-h2 {
+    margin-bottom: 1rem;
+}
+
+.Verificacion-h4 {}
+
+/*--------------------- Imagen ---------------------*/
+
+.Icono {
+    background-color: var(--color-bluemedium);
+    background-image: url(https://assets-eur.mkt.dynamics.com/0f2f56be-2a4b-4daf-b4d5-51079ee05c0d/digitalassets/images/8d274374-0a06-ee11-8f6e-000d3a2e4429?ts=638218320581159575);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.Icono-pixel {
+    width: 5rem;
+}
+
+
+
+/*--------------------- Modelos ---------------------*/
+
+.Modelos {
+    width: 100%;
+    background-color: var(--color-bluelighter);
+
+    grid-column: span 2;
+    grid-row: span 1;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.Genero {
+    width: 90%;
+
+    margin: 2rem auto;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.25rem;
+}
+
+.Genero-img {
+    width: 30%;
+}
+
+.Genero-texto {}
+
+.Genero-h2 {
+    margin-bottom: 1rem;
+}
+
+.Genero-h4 {}
+
+.Retributiva {
+    width: 90%;
+
+    margin: 2rem auto;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.25rem;
+}
+
+.Retributiva-img {
+    width: 50%;
+}
+
+.Retributiva-texto {}
+
+.Retributiva-h2 {
+    margin-bottom: 1rem;
+}
+
+.Retributiva-h4 {}
+
+
+
+/*--------------------- Talleres ---------------------*/
+
+.Talleres {
+    width: 100%;
+    background-color: var(--color-grey);
+
+    padding: 2rem;
+}
+
+.Talleres-h2 {
+    margin: 0 auto 2rem;
+    text-align: center;
+}
+
+.Talleres-wrapper {
+    width: 98%;
+
+    margin: auto;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.875rem;
+}
+
+.Talleres-card {
+    width: calc( 33% );
+    height: 100%;
+    background-color: var(--color-white);
+
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.15);
+    transition: all .5s ease;
+}
+
+.Talleres-card:hover {
+    transform: scale(1.05);
+}
+
+.Talleres-card:active {
+    transform: scale(1.1);
+    transition: all .5s ease;
+}
+
+.Talleres-img {
+    width: 100%;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.Talleres-h5 {
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+.Talleres-h4 {
+    padding: 0 0.5rem 1rem ;
+    font-weight: bold;
+}
+
+
+/*--------------------- Responsive ---------------------*/
+
+
+@media (max-width:1000px) {
+    .Section {
+        grid-template-columns: repeat( 2 , 1fr );
+    }
+
+    .Teayudamos {
+        padding: 3.125rem 0 5rem;
+        height: 40vh;
+    }
+
+    .Verificacion-text {
+        padding: 2rem;
+    }
+
+    .Talleres-wrapper {
+        flex-flow: wrap;
+    }
+    
+    .Talleres-card {
+        width: 40%;
+    }
+
+}
+
+@media (max-width:600px) {
+    .Section {
+        grid-template-columns: initial;
+    }
+
+    .Teayudamos, .Imagen .Form, .Modelos, {
+        grid-column: initial;
+        grid-row: initial;
+    }
+    
+    .Verificacion, .Icono {
+        height: 40vh;
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+
+    .Teayudamos {
+        height: 60vh;
+        display: block;
+        background-position: center bottom;
+    }
+    
+    .Teayudamos-text {
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .Modelos, .Genero, .Retributiva {
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Genero-img, .Retributiva-img {
+        width: 40%;
+    }
+
+    .Talleres-wrapper {
+        width: 100%;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center; 
+    }
+
+    .Talleres-card {
+        width: 90%;
+    }
+}
+
+
+/*--------------------- Footer ---------------------*/
+
+.Footer {
+    width: 100%;
+    background-color: var(--color-bluemedium);
+    padding: 1.5rem;
+}
+
+.Footer-h4 {
+    text-align: center;
+}
