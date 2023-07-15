@@ -5,6 +5,7 @@ Esta es una web creada con html y css usando metodología BEM
 ## Autor
 Mónica Añez Hernández
 
+## Linkedin
 [Linkedin] https://www.linkedin.com/in/monicaanez/
 
 ## Ver ejemplo en vivo
