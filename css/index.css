@@ -179,14 +179,9 @@ h5 {
         grid-template-columns: initial;
     }
 
-    .Teayudamos, .Form, .Modelos, {
+    .Teayudamos, .Form, .Verificacion, .Imagen, .Modelos, {
         grid-column: initial;
         grid-row: initial;
-    }
-
-    .Verificacion, .Imagen {
-        grid-column: span 2;
-        grid-row: span 2;
     }
 }
 
@@ -196,7 +191,7 @@ h5 {
 .Teayudamos {
     width: 100%;
     background-color: #649FEA;
-    background-image: url(https://assets-eur.mkt.dynamics.com/0f2f56be-2a4b-4daf-b4d5-51079ee05c0d/digitalassets/images/eeb3557a-0a06-ee11-8f6e-000d3a2e4429?ts=638218320584909699);
+    background-image: url(../assets/mujer_hombre_ordenador.png);
     background-repeat: no-repeat;
     background-position: left bottom;
 
@@ -230,7 +225,7 @@ h5 {
 
 .Form-iframe {
     width: 100%;
-    height: 150vh;
+     height="1300vh"
     margin: auto;
 }
 
@@ -261,9 +256,9 @@ h5 {
 
 /*--------------------- Imagen ---------------------*/
 
-.Icono {
+.Imagen {
     background-color: var(--color-bluemedium);
-    background-image: url(https://assets-eur.mkt.dynamics.com/0f2f56be-2a4b-4daf-b4d5-51079ee05c0d/digitalassets/images/8d274374-0a06-ee11-8f6e-000d3a2e4429?ts=638218320581159575);
+    background-image: url(../assets/Icono-igualdad-01.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 50%;
@@ -272,9 +267,11 @@ h5 {
     grid-row: span 1;
 }
 
-.Icono-pixel {
+.Imagen-pixel {
     width: 5rem;
 }
+
+
 
 
 
@@ -306,7 +303,7 @@ h5 {
 }
 
 .Genero-img {
-    width: 30%;
+    width: 40%;
 }
 
 .Genero-texto {}
@@ -330,7 +327,7 @@ h5 {
 }
 
 .Retributiva-img {
-    width: 50%;
+    width: 40%;
 }
 
 .Retributiva-texto {}
@@ -436,22 +433,20 @@ h5 {
         grid-template-columns: initial;
     }
 
-    .Teayudamos, .Imagen .Form, .Modelos, {
+    .Teayudamos, .Form, .Verificacion, .Imagen, .Modelos, {
         grid-column: initial;
         grid-row: initial;
     }
-    
-    .Verificacion, .Icono {
-        height: 40vh;
-        grid-column: span 2;
-        grid-row: span 2;
+
+    .Imagen {
+        grid-column: initial;
+        grid-row: initial;
     }
 
-
     .Teayudamos {
-        height: 60vh;
-        display: block;
-        background-position: center bottom;
+        padding: 3.125rem 0 5rem;
+        height: 40vh;
+        background-image: none;
     }
     
     .Teayudamos-text {
@@ -463,10 +458,6 @@ h5 {
         flex-flow: column;
         justify-content: center;
         align-items: center;
-    }
-
-    .Genero-img, .Retributiva-img {
-        width: 40%;
     }
 
     .Talleres-wrapper {
