@@ -1,17 +1,18 @@
-## Descripción
-Landing page igualdad para la empresa certificadora AENOR
-Esta es una web creada con html y css usando metodología BEM
+## Description
+Equality Landing page for the certifying company AENOR
+This is a web created with html and css using SUITE CSS methodology
 
-## Autor
+## Author
 Mónica Añez Hernández
 
-## Ver ejemplo en vivo
+## See live example
 https://monianez.github.io/landingpage-igualdad/
 
-## Instalación
-Este proyecto no necesita instalación. Simplemente abre la carpeta o haz doble click en el .html
+## Instalation
+This project does not need installation. Just open the folder or double click on the .html
 
 ## Linkedin
 [Linkedin] https://www.linkedin.com/in/monicaanez/
-## Contacto
-Me puedes escribir a monianez@gmail.com
+
+## Contact
+You can write to me at monianez@gmail.com
